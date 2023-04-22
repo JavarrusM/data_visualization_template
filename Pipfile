@@ -10,6 +10,7 @@ jupyter = "*"
 flask = "*"
 pandoc = "*"
 ipython = "*"
+pandas = "*"
 
 [dev-packages]
 ipykernel = "*"
