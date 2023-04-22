@@ -1,11 +1,6 @@
-```python
-# Templates
-```
+# TEMPLATES
 
-
-```python
 ## Adding content for checks
-```
 
 
 ```python
