@@ -5,6 +5,11 @@ name = "pypi"
 
 [packages]
 black = "*"
+nbconvert = "*"
+jupyter = "*"
+flask = "*"
+pandoc = "*"
+ipython = "*"
 
 [dev-packages]
 ipykernel = "*"
