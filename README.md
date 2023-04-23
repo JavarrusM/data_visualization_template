@@ -94,5 +94,15 @@ plt.show()
 
 
 ```python
+![Age by Name Plot](./age_by_name_plot.png)
+
+```
+
+    /bin/bash: -c: line 1: syntax error near unexpected token `('
+    /bin/bash: -c: line 1: `[Age by Name Plot](./age_by_name_plot.png)'
+
+
+
+```python
 
 ```
