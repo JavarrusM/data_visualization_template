@@ -74,13 +74,10 @@ plt.ylabel('Age')
 
 # Save the plot as a PNG image file
 plt.savefig('assets/age_by_name_plot.png', dpi=300, bbox_inches='tight')
+
+# Close the plot to prevent it from being displayed
+plt.close()
 ```
-
-
-    
-![png](output_4_0.png)
-    
-
 
 ![Age by Name Plot](./assets/age_by_name_plot.png)
 
