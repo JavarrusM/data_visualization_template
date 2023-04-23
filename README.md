@@ -20,7 +20,19 @@ display(df)
 
 
 <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -62,12 +74,15 @@ display(df)
 
 
 ```python
+%matplotlib inline
 import matplotlib.pyplot as plt
 plt.bar(df['name'], df['age'])
 plt.title('Age by Name')
 plt.xlabel('Name')
 plt.ylabel('Age')
 plt.show()
+# plt.savefig("output.png")
+# ![Age by Name](output.png)
 ```
 
 
