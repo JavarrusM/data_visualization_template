@@ -62,5 +62,21 @@ display(df)
 
 
 ```python
+import matplotlib.pyplot as plt
+plt.bar(df['name'], df['age'])
+plt.title('Age by Name')
+plt.xlabel('Name')
+plt.ylabel('Age')
+plt.show()
+```
+
+
+    
+![png](output_3_0.png)
+    
+
+
+
+```python
 
 ```
