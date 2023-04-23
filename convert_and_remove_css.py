@@ -21,11 +21,9 @@ exporter = MarkdownExporter(config=c)
 markdown, resources = exporter.from_notebook_node(notebook)
 
 # Remove CSS code
-markdown_no_css = re.sub(
-    r"<div>\s*<style scoped>.*?</style>.*?</div>", "", markdown, flags=re.DOTALL
-)
+markdown_no_css = re.sub(r"<style scoped>.*?</style>", "", markdown, flags=re.DOTALL)
 
-# Write the output to the README.md file
+# Write the output to the README.md
 output_file = "README.md"
 with open(output_file, "w", encoding="utf-8") as f:
     f.write(markdown_no_css)
