@@ -12,8 +12,8 @@ with open(notebook_path, "r", encoding="utf-8") as f:
 
 # Configure the exporter
 c = Config()
-c.MarkdownExporter.exclude_input = True
-c.MarkdownExporter.exclude_input_prompt = True
+# c.MarkdownExporter.exclude_input = True
+# c.MarkdownExporter.exclude_input_prompt = True
 c.MarkdownExporter.exclude_output_prompt = True
 exporter = MarkdownExporter(config=c)
 

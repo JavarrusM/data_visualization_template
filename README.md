@@ -3,6 +3,22 @@
 ## Adding content for checks
 
 
+```python
+import pandas as pd
+
+# Let's create a sample dataframe
+data = {
+    "name": ["John", "Jane", "Jim", "Janet"],
+    "age": [25, 30, 35, 40],
+    "location": ["New York", "Chicago", "Los Angeles", "Miami"],
+}
+df = pd.DataFrame(data)
+
+# Now let's print out the dataframe
+display(df)
+```
+
+
 <div>
 
 <table border="1" class="dataframe">
@@ -43,3 +59,8 @@
 </table>
 </div>
 
+
+
+```python
+
+```
