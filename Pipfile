@@ -11,6 +11,7 @@ flask = "*"
 pandoc = "*"
 ipython = "*"
 pandas = "*"
+matplotlib = "*"
 
 [dev-packages]
 ipykernel = "*"
