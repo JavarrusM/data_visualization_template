@@ -6,7 +6,10 @@
 ```python
 import pandas as pd
 import matplotlib.pyplot as plt
+```
 
+
+```python
 # Let's create a sample dataframe
 data = {
     "name": ["John", "Jane", "Jim", "Janet"],
@@ -17,19 +20,6 @@ df = pd.DataFrame(data)
 
 # Now let's print out the dataframe
 display(df)
-
-# Create the plot
-plt.bar(df['name'], df['age'])
-plt.title('Age by Name')
-plt.xlabel('Name')
-plt.ylabel('Age')
-
-# Save the plot as a PNG image file
-plt.savefig('age_by_name_plot.png', dpi=300, bbox_inches='tight')
-
-# Show the plot
-plt.show()
-
 ```
 
 
@@ -75,15 +65,23 @@ plt.show()
 
 
 
-    
-![png](output_2_1.png)
-    
-
-
-![Age by Name Plot](./age_by_name_plot.png)
-
-
-
 ```python
+# Create the plot
+plt.bar(df['name'], df['age'])
+plt.title('Age by Name')
+plt.xlabel('Name')
+plt.ylabel('Age')
 
+# Save the plot as a PNG image file
+plt.savefig('assets/age_by_name_plot.png', dpi=300, bbox_inches='tight')
 ```
+
+
+    
+![png](output_4_0.png)
+    
+
+
+![Age by Name Plot](./assets/age_by_name_plot.png)
+
+
