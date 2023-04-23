@@ -5,6 +5,7 @@
 
 ```python
 import pandas as pd
+import matplotlib.pyplot as plt
 
 # Let's create a sample dataframe
 data = {
@@ -16,6 +17,19 @@ df = pd.DataFrame(data)
 
 # Now let's print out the dataframe
 display(df)
+
+# Create the plot
+plt.bar(df['name'], df['age'])
+plt.title('Age by Name')
+plt.xlabel('Name')
+plt.ylabel('Age')
+
+# Save the plot as a PNG image file
+plt.savefig('age_by_name_plot.png', dpi=300, bbox_inches='tight')
+
+# Show the plot
+plt.show()
+
 ```
 
 
@@ -73,21 +87,8 @@ display(df)
 
 
 
-```python
-%matplotlib inline
-import matplotlib.pyplot as plt
-plt.bar(df['name'], df['age'])
-plt.title('Age by Name')
-plt.xlabel('Name')
-plt.ylabel('Age')
-plt.show()
-# plt.savefig("output.png")
-# ![Age by Name](output.png)
-```
-
-
     
-![png](output_3_0.png)
+![png](output_2_1.png)
     
 
 
